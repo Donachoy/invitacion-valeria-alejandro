@@ -982,10 +982,6 @@ h2 {
   .js [data-clip] {
     clip-path: inset(16% 0 0 0);
   }
-
-  .js .nav {
-    opacity: 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

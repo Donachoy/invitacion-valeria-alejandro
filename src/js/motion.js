@@ -10,13 +10,11 @@ export function initMotion() {
   try {
     ScrollTrigger.config({ ignoreMobileResize: true });
 
-    gsap.from('.nav', {
-      y: -20,
-      opacity: 0,
-      duration: 0.9,
-      ease: 'power3.out',
-      delay: 0.1,
-    });
+    gsap.fromTo(
+      '.nav',
+      { y: -20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out', delay: 0.1 }
+    );
 
     const hero = gsap.timeline({ defaults: { ease: 'power3.out' } });
     hero
