@@ -1,0 +1,23 @@
+:root {
+  --color-olive: #5c6b4a;
+  --color-olive-dark: #3d4a32;
+  --color-olive-light: #7a8a65;
+  --color-cream: #f5f0e8;
+  --color-white: #ffffff;
+  --color-beige: #e8e0d4;
+  --color-beige-dark: #d4c9b8;
+  --color-text: #3d4a32;
+  --color-text-muted: #4e5a42;
+  --ink: #3d4a32;
+  --line: rgba(61, 74, 50, 0.22);
+  --line-strong: rgba(61, 74, 50, 0.4);
+
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+
+  --nav-h: 74px;
+  --gutter: clamp(1.25rem, 4vw, 4.75rem);
+  --measure: 36rem;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

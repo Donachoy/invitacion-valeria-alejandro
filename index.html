@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f0e8" />
+    <meta name="description" content="Invitación a la boda de Valeria y Alejandro — 20 de febrero de 2027, Terraza La Pradera." />
+    <meta property="og:title" content="Valeria & Alejandro — Nos casamos" />
+    <meta property="og:description" content="Te invitamos a celebrar nuestra boda el 20 de febrero de 2027." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/gallery/boda1.jpeg" />
+    <title>Valeria & Alejandro — Nos casamos</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Outfit:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/assets/gallery/boda2.jpeg" />
+    <script>document.documentElement.classList.add('js')</script>
+  </head>
+  <body>
+    <a class="skip" href="#invitacion">Saltar al contenido</a>
+
+    <header class="nav" id="nav">
+      <div class="nav__bar">
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+        </button>
+        <a class="nav__mark" href="#inicio">V<span>&amp;</span>A</a>
+        <a class="nav__cta" href="#confirmar">Confirmar</a>
+        <span class="nav__progress" id="nav-progress" aria-hidden="true"></span>
+      </div>
+      <nav class="nav__links" id="nav-panel" aria-label="Secciones">
+        <a class="nav__extra" href="#inicio">Inicio</a>
+        <a class="nav__extra" href="#invitacion">Invitación</a>
+        <a href="#fecha">Fecha</a>
+        <a class="nav__extra" href="#familias">Familias</a>
+        <a href="#ceremonia">Ceremonia</a>
+        <a href="#vestimenta">Vestimenta</a>
+        <a href="#galeria">Galería</a>
+        <a class="nav__extra" href="#regalo">Obsequio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Portada">
+        <div class="hero__media">
+          <div class="hero__parallax">
+            <img
+              class="hero__img"
+              src="/assets/gallery/boda2.jpeg"
+              alt="Valeria y Alejandro en el bosque"
+              width="1200"
+              height="1600"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="hero__intro">
+            <p class="hero__script hero__anim">nos casamos</p>
+            <h1 class="names" aria-label="Valeria y Alejandro">
+              <span class="hero__anim" aria-hidden="true">Valeria</span>
+              <span class="amp hero__anim" aria-hidden="true">&amp;</span>
+              <span class="hero__anim" aria-hidden="true">Alejandro</span>
+            </h1>
+            <div class="hero__rule" aria-hidden="true"></div>
+            <ul class="hero__meta">
+              <li class="hero__anim">Sábado 20 de febrero de 2027</li>
+              <li class="hero__anim">4:00 p.m.</li>
+              <li class="hero__anim">Terraza La Pradera</li>
+            </ul>
+            <a class="link hero__anim" href="#invitacion">Leer invitación<i aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter" id="invitacion" aria-labelledby="invitacion-title">
+        <div class="letter__inner center" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">01</span> Invitación</p>
+          <h2 class="names" id="invitacion-title" data-reveal aria-label="Valeria y Alejandro">
+            <span aria-hidden="true">Valeria</span>
+            <span class="amp" aria-hidden="true">&amp;</span>
+            <span aria-hidden="true">Alejandro</span>
+          </h2>
+          <div class="ornament" data-reveal aria-hidden="true"><i></i></div>
+          <p class="lead" data-reveal>Con la bendición de nuestros padres, tenemos el gusto de invitarte a celebrar nuestro matrimonio.</p>
+          <p class="letter__note" data-reveal>Será una alegría compartir este día contigo.</p>
+          <p class="letter__script" data-reveal>con cariño</p>
+        </div>
+      </section>
+
+      <figure class="plate" data-reveal>
+        <div class="plate__frame" data-clip>
+          <img src="/assets/decor/flores-oliva.jpg" alt="Flores blancas y follaje verde olivo" width="900" height="1200" />
+        </div>
+      </figure>
+
+      <section class="date" id="fecha" aria-labelledby="fecha-title">
+        <div class="date__media" data-clip>
+          <img src="/assets/gallery/boda5.jpeg" alt="Valeria y Alejandro al atardecer" width="1200" height="1600" />
+        </div>
+        <div class="date__body" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">02</span> Fecha</p>
+          <h2 class="date__heading" id="fecha-title">
+            <span class="date__month" data-reveal>Febrero</span>
+            <span class="date__day">20</span>
+            <span class="date__year" data-reveal>2027</span>
+          </h2>
+          <p class="date__words" data-reveal>Sábado · cuatro de la tarde</p>
+          <p class="date__script" data-reveal>falta poco</p>
+          <div class="draw" data-draw aria-hidden="true"></div>
+          <div class="countdown" id="countdown-timer" role="timer" aria-label="Tiempo restante para la boda" data-reveal>
+            <div class="countdown__item">
+              <span class="countdown__value" id="cd-days">00</span>
+              <span class="countdown__label">Días</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" id="cd-hours">00</span>
+              <span class="countdown__label">Horas</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" id="cd-minutes">00</span>
+              <span class="countdown__label">Min</span>
+            </div>
+            <div class="countdown__item">
+              <span class="countdown__value" id="cd-seconds">00</span>
+              <span class="countdown__label">Seg</span>
+            </div>
+          </div>
+          <p class="countdown__done" id="countdown-done" hidden>Hoy es el gran día.</p>
+        </div>
+      </section>
+
+      <section class="family" id="familias" aria-labelledby="familias-title">
+        <div class="family__inner" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">03</span> Con la bendición de</p>
+          <h2 id="familias-title" data-reveal>Nuestras familias</h2>
+          <div class="family__grid">
+            <article data-reveal>
+              <div class="draw" data-draw aria-hidden="true"></div>
+              <h3>Padres del novio</h3>
+              <ul class="people" id="parents-groom"></ul>
+            </article>
+            <article data-reveal>
+              <div class="draw" data-draw aria-hidden="true"></div>
+              <h3>Padres de la novia</h3>
+              <ul class="people" id="parents-bride"></ul>
+            </article>
+            <article data-reveal>
+              <div class="draw" data-draw aria-hidden="true"></div>
+              <h3>Padrinos</h3>
+              <ul class="people" id="godparents"></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="venue" id="ceremonia" aria-labelledby="ceremonia-title">
+        <div class="venue__media" data-clip>
+          <img src="/assets/decor/salon.png" alt="Salón de Terraza La Pradera" width="1454" height="1082" />
+        </div>
+        <div class="venue__body" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">04</span> Celebración</p>
+          <h2 id="ceremonia-title" data-reveal>Terraza La Pradera</h2>
+          <p class="venue__script" data-reveal>los esperamos</p>
+          <p class="venue__address" id="venue-address" data-reveal></p>
+          <p class="venue__note" data-reveal>La ceremonia y la recepción se celebran en el mismo lugar.</p>
+          <dl class="schedule" data-reveal>
+            <div>
+              <dt>Ceremonia</dt>
+              <dd id="ceremony-time"></dd>
+            </div>
+            <div>
+              <dt>Recepción</dt>
+              <dd id="reception-time"></dd>
+            </div>
+          </dl>
+          <div class="venue__actions" data-reveal>
+            <a class="btn" id="maps-link" href="#" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" id="calendar-link" href="#">Agregar al calendario <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="dress" id="vestimenta" aria-labelledby="vestimenta-title">
+        <div class="dress__visual" data-clip>
+          <img src="/assets/decor/codigo-vestimenta2.png" alt="Referencia de vestimenta formal: traje oscuro, conjunto sastre y vestido largo" width="781" height="673" />
+        </div>
+        <div class="dress__body" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">05</span> Código de vestimenta</p>
+          <h2 id="vestimenta-title" data-reveal>Formal</h2>
+          <p class="dress__text" data-reveal>Te pedimos evitar el blanco, el rojo y sus derivados.</p>
+          <div data-reveal>
+            <p class="dress__label">Tonos reservados</p>
+            <ul class="swatches" aria-label="Colores a evitar">
+              <li><span class="swatch" style="background:#ffffff"></span><span>Blanco</span></li>
+              <li><span class="swatch" style="background:#f4efe6"></span><span>Marfil</span></li>
+              <li><span class="swatch" style="background:#e7d7c1"></span><span>Crema</span></li>
+              <li><span class="swatch" style="background:#b42318"></span><span>Rojo</span></li>
+              <li><span class="swatch" style="background:#7a1f2b"></span><span>Vino</span></li>
+              <li><span class="swatch" style="background:#e7a0a0"></span><span>Rosa</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+        <div class="gallery__head" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">06</span> Retratos</p>
+          <h2 id="galeria-title" data-reveal>Nosotros</h2>
+          <p class="gallery__script" data-reveal>desliza nuestra historia</p>
+        </div>
+        <div class="film">
+          <button class="film__arrow" type="button" data-dir="-1" aria-label="Fotos anteriores">←</button>
+          <div class="film__scroller" id="film" tabindex="0">
+            <button class="film__card" type="button" data-film="0"><img src="/assets/gallery/boda5.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>Atardecer</span></button>
+            <button class="film__card" type="button" data-film="1"><img src="/assets/gallery/boda2.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>El bosque</span></button>
+            <button class="film__card" type="button" data-film="2"><img src="/assets/gallery/boda8.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>La pedida</span></button>
+            <button class="film__card" type="button" data-film="3"><img src="/assets/gallery/boda1.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>El camino</span></button>
+            <button class="film__card" type="button" data-film="4"><img src="/assets/gallery/boda4.jpeg" alt="" width="960" height="1280" loading="lazy" /><span>Entre pinos</span></button>
+            <button class="film__card" type="button" data-film="5"><img src="/assets/gallery/boda3.jpeg" alt="" width="960" height="1280" loading="lazy" /><span>La cascada</span></button>
+            <button class="film__card" type="button" data-film="6"><img src="/assets/gallery/boda9.jpeg" alt="" width="900" height="1600" loading="lazy" /><span>Retrato</span></button>
+            <button class="film__card" type="button" data-film="7"><img src="/assets/gallery/boda6.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>Cerca</span></button>
+            <button class="film__card" type="button" data-film="8"><img src="/assets/gallery/boda7.jpeg" alt="" width="900" height="1600" loading="lazy" /><span>Un beso</span></button>
+            <button class="film__card" type="button" data-film="9"><img src="/assets/gallery/boda10.jpeg" alt="" width="1200" height="1600" loading="lazy" /><span>El corazón</span></button>
+          </div>
+          <button class="film__arrow" type="button" data-dir="1" aria-label="Fotos siguientes">→</button>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: Atardecer"><img src="/assets/gallery/boda5.jpeg" alt="Valeria y Alejandro al atardecer" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">Atardecer</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: El bosque"><img src="/assets/gallery/boda2.jpeg" alt="Valeria y Alejandro en el bosque" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">El bosque</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: La pedida"><img src="/assets/gallery/boda8.jpeg" alt="Valeria y Alejandro en la pedida" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">La pedida</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: El camino"><img src="/assets/gallery/boda1.jpeg" alt="Valeria y Alejandro en un camino de piedra" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">El camino</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: Entre pinos"><img src="/assets/gallery/boda4.jpeg" alt="Valeria y Alejandro entre pinos" width="960" height="1280" loading="lazy" /><span class="gallery__cap">Entre pinos</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: La cascada"><img src="/assets/gallery/boda3.jpeg" alt="Valeria y Alejandro frente a una cascada" width="960" height="1280" loading="lazy" /><span class="gallery__cap">La cascada</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: Retrato"><img src="/assets/gallery/boda9.jpeg" alt="Retrato de Valeria y Alejandro" width="900" height="1600" loading="lazy" /><span class="gallery__cap">Retrato</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: Cerca"><img src="/assets/gallery/boda6.jpeg" alt="Retrato cercano de Valeria y Alejandro" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">Cerca</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: Un beso"><img src="/assets/gallery/boda7.jpeg" alt="Valeria y Alejandro" width="900" height="1600" loading="lazy" /><span class="gallery__cap">Un beso</span></button></figure>
+          <figure class="gallery__item"><button type="button" data-gallery aria-label="Ampliar: El corazón"><img src="/assets/gallery/boda10.jpeg" alt="Valeria y Alejandro frente a un corazón de flores" width="1200" height="1600" loading="lazy" /><span class="gallery__cap">El corazón</span></button></figure>
+        </div>
+      </section>
+
+      <section class="gift" id="regalo" aria-labelledby="regalo-title">
+        <div class="gift__body" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">07</span> Obsequio</p>
+          <h2 id="regalo-title" data-reveal>Sugerencia de regalo</h2>
+          <p class="gift__text" id="gift-text" data-reveal></p>
+          <p class="gift__label" data-reveal>CLABE</p>
+          <p class="clabe" id="gift-clabe" data-reveal></p>
+          <button class="btn btn--ghost" id="copy-clabe" type="button" data-reveal>Copiar CLABE</button>
+        </div>
+      </section>
+
+      <section class="rsvp" id="confirmar" aria-labelledby="rsvp-title">
+        <div class="rsvp__body" data-group>
+          <p class="eyebrow" data-reveal><span aria-hidden="true">08</span> Asistencia</p>
+          <h2 id="rsvp-title" data-reveal>Confirma tu asistencia</h2>
+          <p class="lead" data-reveal>Tu presencia hará este día aún más especial.</p>
+          <a class="btn" id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" data-reveal>Confirmar por WhatsApp <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="rsvp__media" data-clip>
+          <img src="/assets/gallery/boda1.jpeg" alt="Valeria y Alejandro" width="1200" height="1600" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-group>
+      <p class="footer__mark" data-reveal>V <em>&amp;</em> A</p>
+      <div class="ornament" data-reveal aria-hidden="true"><i></i></div>
+      <p class="footer__script" data-reveal>con amor</p>
+      <p class="footer__names" data-reveal>Valeria y Alejandro</p>
+      <p class="footer__meta" data-reveal>20 de febrero de 2027 · Terraza La Pradera</p>
+    </footer>
+
+    <audio id="bg-music" preload="metadata" loop>
+      <source src="/assets/audio/a-thousand-years.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Reproducir música">
+      <svg class="music-toggle__play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="music-toggle__pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6V5zm8 0h4v14h-4V5z"/></svg>
+    </button>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+      <div class="lightbox__bar">
+        <p class="lightbox__count" id="lightbox-count"></p>
+        <button class="lightbox__close" type="button" data-close>Cerrar</button>
+      </div>
+      <div class="lightbox__stage">
+        <button class="lightbox__nav" type="button" data-prev aria-label="Foto anterior">←</button>
+        <figure class="lightbox__figure">
+          <img id="lightbox-img" alt="" />
+          <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox__nav" type="button" data-next aria-label="Foto siguiente">→</button>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
