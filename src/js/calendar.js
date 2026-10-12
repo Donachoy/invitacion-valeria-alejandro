@@ -18,7 +18,7 @@ export function initCalendar() {
     'DTEND:20270221T040000Z',
     'SUMMARY:Boda de Valeria y Alejandro',
     `LOCATION:${venue.name}, ${venue.address}`,
-    'DESCRIPTION:Ceremonia y recepción a partir de las 4:00 p.m.',
+    'DESCRIPTION:Ceremonia 4:00 p.m. · Recepción 4:30 p.m. en Terraza La Pradera.',
     'END:VEVENT',
     'END:VCALENDAR',
   ].join('\r\n');

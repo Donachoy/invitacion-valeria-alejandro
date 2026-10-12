@@ -9,6 +9,7 @@ export const weddingConfig = {
   dateISO: '2027-02-20T16:00:00-06:00',
   dateLabel: 'Sábado 20 de febrero de 2027',
   timeLabel: '4:00 P.M.',
+  receptionTimeLabel: '4:30 P.M.',
   venue: {
     name: 'Terraza La Pradera',
     address: 'Camino Antiguo a Tequila 1101, Jal.',
@@ -19,16 +20,13 @@ export const weddingConfig = {
     bride: ['Roberto Ayala Cabrera', 'Sulema Chávez Avelar'],
   },
   godparents: ['Luis Javier Fernández Mercado', 'Luisa Cazares Paz'],
-  clabe: {
-    raw: '012180015749298393',
-    formatted: '012 180 01574929839 3',
-  },
   whatsapp: {
     phone: '523334608535',
     message: 'Confirmo mi asistencia a la boda de Valeria y Alejandro',
   },
   gift: {
-    text: 'Su presencia es nuestro mejor regalo. Si desean obsequiarnos algo, pueden hacerlo mediante transferencia:',
+    text: 'Su presencia es nuestro mejor regalo. Si desean obsequiarnos algo, les sugerimos:',
+    suggestion: 'Lluvia de sobres',
   },
   gallery: [
     '/assets/gallery/boda1.jpeg',

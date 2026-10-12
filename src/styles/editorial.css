@@ -658,17 +658,14 @@ h2 {
   font-size: clamp(2.6rem, 5vw, 4rem);
 }
 
-.clabe {
-  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
-  letter-spacing: 0.04em;
-  line-height: 1.45;
-  font-variant-numeric: tabular-nums;
-  user-select: all;
-}
-
-#copy-clabe {
-  min-width: 11.5rem;
-  margin-top: 0.35rem;
+.gift__suggestion {
+  margin-top: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--color-olive-dark);
 }
 
 .rsvp {

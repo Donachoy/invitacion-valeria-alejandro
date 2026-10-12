@@ -1,6 +1,5 @@
 import { weddingConfig, getWhatsAppUrl, getMapsUrl } from './config.js';
 import { initCountdown } from './js/countdown.js';
-import { initCopyClabe } from './js/copy-clabe.js';
 import { initMenu } from './js/menu.js';
 import { initLightbox } from './js/lightbox.js';
 import { initCalendar } from './js/calendar.js';
@@ -24,7 +23,7 @@ function fillList(id, names) {
 }
 
 function populateInfo() {
-  const { venue, timeLabel, parents, godparents, gift } = weddingConfig;
+  const { venue, timeLabel, receptionTimeLabel, parents, godparents, gift } = weddingConfig;
 
   const title = document.getElementById('ceremonia-title');
   const address = document.getElementById('venue-address');
@@ -37,9 +36,11 @@ function populateInfo() {
   if (title) title.textContent = venue.name;
   if (address) address.textContent = venue.address;
   if (ceremony) ceremony.textContent = timeLabel;
-  if (reception) reception.textContent = timeLabel;
+  if (reception) reception.textContent = receptionTimeLabel;
   if (maps) maps.href = getMapsUrl();
   if (giftText) giftText.textContent = gift.text;
+  const giftSuggestion = document.getElementById('gift-suggestion');
+  if (giftSuggestion) giftSuggestion.textContent = gift.suggestion;
   if (whatsapp) whatsapp.href = getWhatsAppUrl();
 
   fillList('parents-groom', parents.groom);
@@ -49,7 +50,6 @@ function populateInfo() {
 
 function init() {
   populateInfo();
-  initCopyClabe();
   initCountdown();
   initMenu();
   initLightbox();
