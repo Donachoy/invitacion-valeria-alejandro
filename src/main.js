@@ -38,9 +38,9 @@ function populateInfo() {
   if (ceremony) ceremony.textContent = timeLabel;
   if (reception) reception.textContent = receptionTimeLabel;
   if (maps) maps.href = getMapsUrl();
-  if (giftText) giftText.textContent = gift.text;
-  const giftSuggestion = document.getElementById('gift-suggestion');
-  if (giftSuggestion) giftSuggestion.textContent = gift.suggestion;
+  const giftNote = document.getElementById('gift-note');
+  if (giftText) giftText.textContent = gift.primary;
+  if (giftNote) giftNote.textContent = gift.secondary;
   if (whatsapp) whatsapp.href = getWhatsAppUrl();
 
   fillList('parents-groom', parents.groom);

@@ -20,4 +20,8 @@
   --gutter: clamp(1.25rem, 4vw, 4.75rem);
   --measure: 36rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --gift-copper: #8a5c42;
+  --gift-gold: rgba(168, 132, 78, 0.45);
+  --gift-frame: #e0d2c0;
 }

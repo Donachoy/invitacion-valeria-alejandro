@@ -308,7 +308,6 @@ h2 {
 .date__body,
 .venue__body,
 .dress__body,
-.gift__body,
 .rsvp__body {
   display: flex;
   flex-direction: column;
@@ -474,7 +473,6 @@ h2 {
 }
 
 .venue__note,
-.gift__text,
 .dress__text {
   max-width: 28em;
   font-size: 1.18rem;
@@ -545,14 +543,6 @@ h2 {
 }
 
 .dress__label,
-.gift__label {
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
 .swatches {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -637,35 +627,6 @@ h2 {
   object-fit: cover;
   object-position: center 38%;
   transition: transform 1.05s var(--ease);
-}
-
-.gift {
-  background: var(--color-cream);
-}
-
-.gift__body {
-  width: min(36rem, 100%);
-  margin-inline: auto;
-  align-items: center;
-  text-align: center;
-}
-
-.gift__body .eyebrow {
-  justify-content: center;
-}
-
-.gift h2 {
-  font-size: clamp(2.6rem, 5vw, 4rem);
-}
-
-.gift__suggestion {
-  margin-top: 0.5rem;
-  font-family: var(--font-serif);
-  font-size: clamp(1.85rem, 4vw, 2.75rem);
-  font-style: italic;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  color: var(--color-olive-dark);
 }
 
 .rsvp {

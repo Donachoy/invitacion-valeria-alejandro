@@ -25,8 +25,10 @@ export const weddingConfig = {
     message: 'Confirmo mi asistencia a la boda de Valeria y Alejandro',
   },
   gift: {
-    text: 'Su presencia es nuestro mejor regalo. Si desean obsequiarnos algo, les sugerimos:',
-    suggestion: 'Lluvia de sobres',
+    primary:
+      'Nuestro mejor regalo es tu compañía, pero si deseas obsequiarnos algo y no sabes qué, te sugerimos lluvia de sobres.',
+    secondary:
+      'En la entrada de la fiesta encontrarás un lugar donde podrás depositar tu sobre.',
   },
   gallery: [
     '/assets/gallery/boda1.jpeg',
