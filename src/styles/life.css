@@ -531,7 +531,7 @@ body::before {
 .gift__floral {
   position: absolute;
   z-index: 1;
-  left: clamp(-6.5rem, -28vw, -5rem);
+  left: clamp(-7.25rem, -30vw, -5.65rem);
   bottom: clamp(-3rem, -10vw, -2rem);
   width: min(56%, 10rem);
   height: auto;
@@ -555,7 +555,7 @@ body::before {
   }
 
   .gift__floral {
-    left: -5.75rem;
+    left: -6.35rem;
     bottom: -2.35rem;
     width: 10.25rem;
   }
