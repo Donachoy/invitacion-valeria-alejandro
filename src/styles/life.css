@@ -408,12 +408,13 @@ body::before {
 /* —— Sugerencia de regalo (arco editorial) —— */
 .gift {
   padding: 0;
+  overflow: visible;
   background: var(--gift-frame);
 }
 
 .gift__shell {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: clamp(2.75rem, 8vw, 5rem) var(--gutter) clamp(3rem, 9vw, 5.5rem);
 }
 
@@ -447,8 +448,17 @@ body::before {
   width: min(100%, 22.5rem);
   min-height: clamp(28rem, 72vw, 34rem);
   margin-inline: auto;
-  padding: 0;
-  overflow: hidden;
+  padding: 0 0 clamp(4.5rem, 12vw, 6rem);
+  overflow: visible;
+  background: transparent;
+  isolation: isolate;
+}
+
+.gift__arch::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background: linear-gradient(180deg, #faf7f2 0%, var(--color-cream) 42%, var(--color-cream) 100%);
   border-radius: 50% 50% 0 0 / 28% 28% 0 0;
   box-shadow:
@@ -465,13 +475,7 @@ body::before {
   align-items: center;
   justify-content: center;
   gap: clamp(1.75rem, 5vw, 2.75rem);
-  padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.35rem, 4.5vw, 2rem) clamp(1.25rem, 4vw, 1.75rem);
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(245, 240, 232, 0.92) 78%,
-    var(--color-cream) 100%
-  );
+  padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.35rem, 4.5vw, 2rem) clamp(2rem, 5vw, 2.75rem);
 }
 
 .gift__line {
@@ -524,23 +528,18 @@ body::before {
   color: var(--gift-copper);
 }
 
-.gift__floral-bed {
-  position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  height: clamp(6.25rem, 20vw, 8rem);
-  overflow: hidden;
-  pointer-events: none;
-}
-
 .gift__floral {
   position: absolute;
-  left: -10%;
-  bottom: -18%;
-  width: min(72%, 12rem);
-  height: 130%;
-  object-fit: cover;
-  object-position: 38% 42%;
+  z-index: 1;
+  left: clamp(-2.25rem, -9vw, -1.25rem);
+  bottom: clamp(-1.75rem, -5vw, -0.75rem);
+  width: min(68%, 12.5rem);
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: left bottom;
+  pointer-events: none;
+  user-select: none;
   opacity: 0.98;
   filter: saturate(0.92);
 }
@@ -556,7 +555,7 @@ body::before {
   }
 
   .gift__floral {
-    left: -6%;
-    width: 12.5rem;
+    left: -1.75rem;
+    width: 13rem;
   }
 }
